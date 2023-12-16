@@ -1,0 +1,89 @@
+Lenovo@DESKTOP-IC193QS MINGW64 ~/Desktop (master)
+$ git cd divya
+git: 'cd' is not a git command. See 'git --help'.
+
+The most similar command is
+        add
+
+Lenovo@DESKTOP-IC193QS MINGW64 ~/Desktop (master)
+$ cd divya
+
+Lenovo@DESKTOP-IC193QS MINGW64 ~/Desktop/divya (main)
+$ git init
+Reinitialized existing Git repository in C:/Users/Lenovo/Desktop/divya/.git/
+
+Lenovo@DESKTOP-IC193QS MINGW64 ~/Desktop/divya (main)
+$ ls
+
+Lenovo@DESKTOP-IC193QS MINGW64 ~/Desktop/divya (main)
+$ notepad main.cpp
+
+Lenovo@DESKTOP-IC193QS MINGW64 ~/Desktop/divya (main)
+$ notepad main.cpp
+
+Lenovo@DESKTOP-IC193QS MINGW64 ~/Desktop/divya (main)
+$ git add .
+
+Lenovo@DESKTOP-IC193QS MINGW64 ~/Desktop/divya (main)
+$ git commit -m "Adding files"
+[main (root-commit) 3809460] Adding files
+ 1 file changed, 1 insertion(+)
+ create mode 100644 main.cpp
+
+Lenovo@DESKTOP-IC193QS MINGW64 ~/Desktop/divya (main)
+$ git remote add orgin ^[[200~https://github.com/anthireddydivya/divya.git~
+
+Lenovo@DESKTOP-IC193QS MINGW64 ~/Desktop/divya (main)
+$ git push origin master
+error: src refspec master does not match any
+error: failed to push some refs to 'https://github.com/anthireddydivya/divya.git'
+
+Lenovo@DESKTOP-IC193QS MINGW64 ~/Desktop/divya (main)
+$ git push origin main
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 240 bytes | 240.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+
+To https://github.com/anthireddydivya/divya.git
+ * [new branch]      main -> main
+
+Lenovo@DESKTOP-IC193QS MINGW64 ~/Desktop/divya (main)
+$
+
+Lenovo@DESKTOP-IC193QS MINGW64 ~/Desktop/divya (main)
+$ git branch develop
+
+Lenovo@DESKTOP-IC193QS MINGW64 ~/Desktop/divya (main)
+$ git checkout develop
+Switched to branch 'develop'
+
+Lenovo@DESKTOP-IC193QS MINGW64 ~/Desktop/divya (develop)
+$ git push origin develop
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'develop' on GitHub by visiting:
+remote:      https://github.com/anthireddydivya/divya/pull/new/develop
+remote:
+To https://github.com/anthireddydivya/divya.git
+ * [new branch]      develop -> develop
+
+Lenovo@DESKTOP-IC193QS MINGW64 ~/Desktop/divya (develop)
+$ git branch feature
+
+Lenovo@DESKTOP-IC193QS MINGW64 ~/Desktop/divya (develop)
+$ git checkout feature
+Switched to branch 'feature'
+
+Lenovo@DESKTOP-IC193QS MINGW64 ~/Desktop/divya (feature)
+$ git push origin feature
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'feature' on GitHub by visiting:
+remote:      https://github.com/anthireddydivya/divya/pull/new/feature
+remote:
+To https://github.com/anthireddydivya/divya.git
+ * [new branch]      feature -> feature
+
+Lenovo@DESKTOP-IC193QS MINGW64 ~/Desktop/divya (feature)
+$ git checkout feature
