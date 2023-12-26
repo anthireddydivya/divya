@@ -1,36 +1,40 @@
 
-@@ -0,0 +1,34 @@
 pipeline{
     agent any
-
-    stages('checkout'){
-        steps{
+    
+    stages{
+    
+       stage('checkout'){
+          steps{
             echo 'source code checkout from git hub'
-
+            
         }
     }
-    stages('build'){
+       stage('build'){
         steps{
             echo 'build project'
-
+            
         }
     }
-    stages('test'){
+       stage('test'){
         steps{
             echo 'test project'
-
+            
         }
     }
-    stages('infra structure'){
+       stage('infra structure'){
         steps{
             echo 'providing infrastructure'
-
+            
         }
-        stages('deployment'){
-        steps{
+    }
+        stage('deployment'){
+         steps{
             echo 'deploment of the project'
-
+            
+            }
         }
-    }
-    }
+   }
+   
 }
+
