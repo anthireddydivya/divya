@@ -1,0 +1,38 @@
+pipeline{
+    agent any
+    
+    stages{
+    
+       stage('checkout'){
+          steps{
+            echo 'source code checkout from git hub'
+            
+        }
+    }
+       stage('build'){
+        steps{
+            echo 'build project'
+            
+        }
+    }
+       stage('test'){
+        steps{
+            echo 'test project'
+            
+        }
+    }
+       stage('infra structure'){
+        steps{
+            echo 'providing infrastructure'
+            
+        }
+    }
+        stage('deployment'){
+         steps{
+            echo 'deploment of the project'
+            
+            }
+        }
+   }
+   
+}
